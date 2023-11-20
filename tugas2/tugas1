@@ -1,0 +1,27 @@
+package tugas2;
+
+import static java.lang.System.out;
+import java.util.Scanner;
+public class tugas1{
+	public static void main(String[] args){
+		Scanner keyboard = new Scanner (System.in);
+		
+		out.print("Username: ");
+		String username = keyboard.next ();
+		
+		if (username.equals("salsa") ) {
+			out.print("password: ");
+			String password = keyboard.next ();
+			
+		if (password.equals("327") ) {
+			out.println("you're in.");
+		} else{
+			out.println("incorect password");
+		}
+		}else{
+			out.println("Unknown user");
+		}
+		
+		keyboard.close();
+	}
+}
